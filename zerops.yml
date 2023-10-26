@@ -4,5 +4,5 @@ app:
     addToRunPrepare: [ requirements.txt ]
   run:
     prepare:
-        - python3 -m pip install -r requirements.txt
+        - python3 -m pip install --ignore-installed -r requirements.txt
     start: python3 main.py
