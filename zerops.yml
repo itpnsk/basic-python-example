@@ -1,7 +1,9 @@
 app:
   build:
-    deploy: [ main.py ]
-    addToRunPrepare: [ requirements.txt ]
+    deploy: 
+      - main.py
+    addToRunPrepare: 
+      - requirements.txt
   run:
     prepare:
         - python3 -m pip install --ignore-installed -r requirements.txt
