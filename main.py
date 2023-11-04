@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello from Zerops! TEST2'
+    return 'Hello from Zerops! TEST3'
 
 
 @app.route('/test')
