@@ -1,12 +1,14 @@
 from flask import Flask
 import platform
+import datetime
 
 app = Flask(__name__)
 
+a = 10
 
 @app.route('/')
 def index():
-    return '<h1>Hello from Zerops!</h1> TEST5'
+    return '<h1>Hello from Zerops!</h1> TEST5 {{a}}'
 
 
 @app.route('/test')
