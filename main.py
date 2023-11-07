@@ -38,6 +38,7 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
 def hello():
-    return render_template('index.html', utc_dt=datetime.datetime.utcnow())
+    fruits = ['apple', 'orange', 'pear', 'pineapple', 'durian']
+    return render_template('index.html', utc_dt=datetime.datetime.utcnow(), fruits=fruits)
 
 app.run(host='0.0.0.0', port=8080)
