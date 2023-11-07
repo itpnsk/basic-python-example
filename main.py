@@ -6,20 +6,9 @@ app = Flask(__name__)
 
 a = 10
 
-# @app.route('/')
-# def index():
-#     return '<h1>Hello from Zerops!</h1> TEST5 {{a}}'
-
 @app.route('/')
 def index():
-    fruits = ['apple', 'orange', 'pear', 'pineapple', 'durian']
-    return render_template(
-        'index.html',
-        name='bob',
-        age=40,
-        fruits=fruits
-    )
-
+    return '<h1>Hello from Zerops!</h1> TEST5 {{a}}'
 
 @app.route('/test')
 def test():
