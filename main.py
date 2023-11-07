@@ -11,7 +11,7 @@ a = 10
 #     return '<h1>Hello from Zerops!</h1> TEST5 {{a}}'
 
 @app.route('/')
-def home():
+def index():
     fruits = ['apple', 'orange', 'pear', 'pineapple', 'durian']
     return render_template(
         'index.html',
