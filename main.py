@@ -30,7 +30,9 @@
 # app.run(host='0.0.0.0', port=8080)
 
 import datetime
-from flask import Flask, render_template
+from flask import Flask
+from flask import render_template
+from flask import request
 
 # app = Flask(__name__)
 app = Flask(__name__, template_folder='templates')
@@ -39,6 +41,6 @@ app = Flask(__name__, template_folder='templates')
 @app.route('/')
 def hello():
     fruits = ['apple', 'orange', 'pear', 'pineapple', 'durian']
-    return render_template('index.html', utc_dt=datetime.datetime.utcnow(), fruits=fruits)
+    return render_template('index.html', utc_dt=datetime.datetime.utcnow(), fruits=fruits, args = request.args)
 
 app.run(host='0.0.0.0', port=8080)
