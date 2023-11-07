@@ -25,12 +25,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    fruits = ['apple', 'orange', 'pear', 'pineapple', 'durian']
-    return render_template(
-        'index.html',
-        name='bob',
-        age=40,
-        fruits=fruits
-    )
+    return render_template('index.html')
 
 app.run(host='0.0.0.0', port=8080)
