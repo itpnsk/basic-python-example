@@ -1,7 +1,6 @@
 app:
   build:
-    deploy: 
-      - main.py
+    deploy: [main.py, index.html]
     addToRunPrepare: 
       - requirements.txt
   run:
