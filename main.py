@@ -25,6 +25,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return '<h1>Hello from Zerops!</h1> TEST5'
 
 app.run(host='0.0.0.0', port=8080)
